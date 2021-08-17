@@ -62,21 +62,21 @@ Here is a list of languages that were utilised to prepare these implementations:
 
 ## Implemented Research Paper Citations <a name="citations"></a>
 
-##### [Linear Regression]
-**[1]** Gromiha MM. "**A statistical model for predicting protein folding rates from amino acid sequence with structural class information." 
+#### [Linear Regression]
+**[1]** Gromiha MM. "**A statistical model for predicting protein folding rates from amino acid sequence with structural class information.**" 
         J Chem Inf Model. 2005 Mar-Apr;45(2):494-501. doi: 10.1021/ci049757q. PMID: 15807515. [[Research paper](https://pubmed.ncbi.nlm.nih.gov/15807515/)]
 
-##### [Logistic Regression]
+#### [Logistic Regression]
 **[1]** Heinson AI, Ewing RM, Holloway JW, Woelk CH, Niranjan M."**An evaluation of different classification algorithms for protein sequence-based reverse vaccinology prediction.**" 
         PLoS One. 2019;14(12):e0226256. Published 2019 Dec 13. doi:10.1371/journal.pone.0226256  PMID: 31834914 [[Research paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6910663/)]
 
-##### [Random Forest]
+#### [Random Forest]
 **[1]** Ram M, Najafi A, Shakeri MT. "**Classification and Biomarker Genes Selection for Cancer Gene Expression Data Using Random Forest.**"
         Iran J Pathol. 2017;12(4):339-347. PMID: 29563929 [[Research paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5844678/)]
 
-##### [Support Vector Machines]
-**[1]** He, Y., Ma, J., & Ye, X. (2017). A support vector machine classifier for the prediction of osteosarcoma metastasis with high accuracy. **"
-        International journal of molecular medicine, 40(5), 1357–1364. PMID: 28901446 [[Research paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5627885/)]
+#### [Support Vector Machines]
+**[1]** He, Y., Ma, J., & Ye, X. "**A support vector machine classifier for the prediction of osteosarcoma metastasis with high accuracy.**"
+        International journal of molecular medicine, 40(5), 1357–1364. doi:10.3892/ijmm.2017.3126 PMID: 28901446 [[Research paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5627885/)]
 
 ## License <a name="license"></a>
 
