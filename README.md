@@ -28,7 +28,7 @@ My work here involved understanding these research papers, preprocessing the dat
 
 
 <p align="center">
-<img src="" width="600" alt="cover image" title='Cover image for repository Machine-learning-Bioinformatics-Paper-Implementations'/>
+<img src="https://github.com/ShrutiBaikerikar/machine-learning-bioinformatics-paper-implementations/blob/main/Cover_Image/ML_BI_Cover.jpeg" width="800" alt="cover image" title='Cover image for repository Machine-learning-Bioinformatics-Paper-Implementations'/>
 </p>
 <p align="center">
 
