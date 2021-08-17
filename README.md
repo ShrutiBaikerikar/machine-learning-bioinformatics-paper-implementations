@@ -11,7 +11,7 @@
 
 ## Introduction <a name="intro"></a>
 
-This repository covers research paper implementations in the field of Machine learning, Bioinformatics ,and Computational Biology. 
+This repository covers research paper implementations in the field of Machine learning, Bioinformatics, Genomics, Next Generation Sequencing and Computational Biology. 
 
 Machine Learning is the science of enabling computers to make predictions and decisions based on previously observed or acquired data. ML fuses principles of statistics, math, programming ,and algorithmic thinking to learn, predict, classify and make decisions which helps in solving real-world problems.
 
