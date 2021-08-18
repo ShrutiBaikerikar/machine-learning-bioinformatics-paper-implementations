@@ -19,11 +19,11 @@ Bioinformatics is the discipline where molecular biology meets computer technolo
 
 From the very beginning, biological studies have generated unprecedented amounts of data and observations. New technologies such as next-generation sequencing, computer-aided drug designing, computational neuroscience, genomics, proteomics, medical and cellular imaging are contributing to the big data era in biology. 
 
-Manual analysis of such data would incredibly slow and quite impossible. Here is where machine learning algorithms come to our rescue. Computer science along with machine learning aids in the storage and analysis of biological big data. They help us generalize vast, heterogeneous data and further assist in developing conclusions, predictions, designing effective drugs/therapeutics ,and making better diagnostic decisions.
+Manual analysis of such data would be incredibly slow and quite impossible. Here is where machine learning algorithms come to our rescue. Computer science along with machine learning aids in the storage and analysis of biological big data. They help us generalize vast, heterogeneous data and further assist in developing conclusions, predictions, designing effective drugs/therapeutics ,and making better diagnostic decisions.
 
 The papers covered in this repository have been officially published in various scientific journals and the citations are included below. Full credit for the study design, concept, data, analytical techniques used in the papers, the manuscript publication goes to the authors of the research papers. The datasets included in this repo are publicly available datasets or data made available by the authors. 
 
-My work here involved understanding these research papers, preprocessing the data and making it available to you (if not preprocessed and provided by the authors) ,and implementing the computational and analytic techniques discussed in the research papers in python scripts.
+My work here involved understanding these research papers, preprocessing the data and making it available to you (if not preprocessed and provided by the authors) ,and implementing the computational and analytic techniques discussed in the research papers.
 
 
 
