@@ -13,7 +13,8 @@ import matplotlib.pyplot as plt
 
 
 # Reading the dataset
-rv_data = pd.read_csv("C:/Users/Shruti SB/PycharmProjects/ML_BI_papers/Reverse_vaccine/BPAD200_TOP10.csv")
+url = "https://raw.githubusercontent.com/ShrutiBaikerikar/machine-learning-bioinformatics-paper-implementations/main/2.Logistic_Regression/Datasets/BPAD200_Top10.csv"
+rv_data = pd.read_csv(url)
 rv_data.rename(columns=lambda x:x.replace(" ","_"),inplace=True)
 print(rv_data.head(3))
 
