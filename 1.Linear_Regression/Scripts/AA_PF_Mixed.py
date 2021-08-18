@@ -6,14 +6,9 @@ from sklearn import metrics
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
-
-#################################################################################################################
-#Mixed Proteins
-#Mean Absolute Error: 1.923052400431655
-#Mean Squared Error: 5.406618024856456
-#Root Mean Squared Error: 2.3252135439259027
-
-data = pd.read_csv("C:/Users/Shruti SB/PycharmProjects/ML_BI_papers/AA_PF/mixedproteins.csv")
+#Reading data
+url = "https://raw.githubusercontent.com/ShrutiBaikerikar/machine-learning-bioinformatics-paper-implementations/main/1.Linear_Regression/Datasets/mixedproteins.csv"
+data = pd.read_csv(url)
 #print(data.head())
 
 #selecting features as specified by the author
