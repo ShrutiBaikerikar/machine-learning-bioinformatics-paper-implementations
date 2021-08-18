@@ -126,5 +126,5 @@ Note: The difference in results obtained from these scripts and those found by t
 
 ## Citation <a name="citation"></a>
 
-Gromiha MM. A statistical model for predicting protein folding rates from amino acid sequence with structural class information. J Chem Inf Model. 2005 Mar-Apr;45(2):494-501. doi: 10.1021/ci049757q. PMID: 15807515.
+Gromiha MM. A statistical model for predicting protein folding rates from amino acid sequence with structural class information. J Chem Inf Model. 2005 Mar-Apr;45(2):494-501. doi: 10.1021/ci049757q. PMID:15807515.
 https://pubmed.ncbi.nlm.nih.gov/15807515/ (https://pubmed.ncbi.nlm.nih.gov/15807515/)
