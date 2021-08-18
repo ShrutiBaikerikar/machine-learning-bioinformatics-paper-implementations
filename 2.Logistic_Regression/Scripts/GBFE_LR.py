@@ -9,7 +9,8 @@ from sklearn.feature_selection import RFECV
 import matplotlib.pyplot as plt
 
 #Reading scaled data with all features
-rv_data = pd.read_csv("C:/Users/Shruti SB/PycharmProjects/ML_BI_papers/Reverse_vaccine/BPAD200.csv")
+url = "https://raw.githubusercontent.com/ShrutiBaikerikar/machine-learning-bioinformatics-paper-implementations/main/2.Logistic_Regression/Datasets/BPAD200.csv"
+rv_data = pd.read_csv(url)
 rv_data.rename(columns=lambda x:x.replace(" ","_"),inplace=True)
 print(rv_data.head(3))
 
