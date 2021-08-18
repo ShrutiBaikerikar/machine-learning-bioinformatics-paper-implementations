@@ -43,7 +43,7 @@ Finally, linear regression was applied to the whole dataset, to a subset of the 
 
 ## Results <a name="results"></a>
 
-A] Linear Regression Implemented on Individual Structural Classes of Proteins
+### A] Linear Regression Implemented on Individual Structural Classes of Proteins
 
 The scripts for these procedures are AA_PF_Alpha.py , AA_PF_Beta.py and AA_PF_Mixed.py . Linear Regression was implemented on each of the datasets separately (alpha, beta and mixed proteins) and the results (coefficients) obtained were very similar to author's calculation. The results are:
 
@@ -69,11 +69,11 @@ The scripts for these procedures are AA_PF_Alpha.py , AA_PF_Beta.py and AA_PF_Mi
   In the equation for mixed proteins, K0, Ra, dASA and GhD are compressibility, reduction in solvent accessibility and solvent accessible surface area for protein unfolding and Gibbs free energy change of hydration for denatured protein. 
 
 
-B] Linear Regression Implemented on Entire Dataset
+### B] Linear Regression Implemented on Entire Dataset
 
 The script for this procedure is AA_PF_LR.py . 
 
-- Applying Linear Regression on all Features of the Complete Dataset
+#### - Applying Linear Regression on all Features of the Complete Dataset
 
   Linear Regression with Stochastic Gradient Descent was applied to the entire dataset. The results were:
   
@@ -84,7 +84,7 @@ The script for this procedure is AA_PF_LR.py .
   Coefficient with lowest value : Structure : -1.738907
 
 
-- Applying Linear Regression on Informative Features Identified by the Author
+#### - Applying Linear Regression on Informative Features Identified by the Author
 
   Linear Regression with Stochastic Gradient Descent was applied to the dataset but only on features that were identified as informative by the author. These features were 'Structure','K0','Pb','aC','Ra','dASA','GhD'.
   The results were:
@@ -105,7 +105,7 @@ The script for this procedure is AA_PF_LR.py .
   | GhD        |   1.929174  |
 
 
-- Identifying Important Features using current ML techniques
+#### - Identifying Important Features using current ML techniques
 
   Linear Regression with Stochastic Gradient Descent was applied to the entire dataset to identify the top 10 informative features based on correlation. These features were:
   - Structure: Structure class of the protein (Alpha, Beta, Mixed)
