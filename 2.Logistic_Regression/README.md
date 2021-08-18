@@ -111,5 +111,5 @@ Note: Differences in Results obtained by scripts in this repository versus those
 Heinson AI, Ewing RM, Holloway JW, Woelk CH, Niranjan M. An evaluation of different classification algorithms for protein sequence-based reverse vaccinology prediction. PLoS One. 2019;14(12):e0226256. Published 2019 Dec 13. doi:10.1371/journal.pone.0226256
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6910663/ (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6910663/)
 
-Heinson AI, Gunawardana Y, Moesker B, et al. Enhancing the Biological Relevance of Machine Learning Classifiers for Reverse Vaccinology. Int J Mol Sci. 2017;18(2):312. Published 2017 Feb 1. doi:10.3390/ijms18020312
+Heinson AI, Gunawardana Y, Moesker B, et al. Enhancing the Biological Relevance of Machine Learning Classifiers for Reverse Vaccinology. Int J Mol Sci.2017;18(2):312. Published 2017 Feb 1. doi:10.3390/ijms18020312
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5343848/ (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5343848/)
