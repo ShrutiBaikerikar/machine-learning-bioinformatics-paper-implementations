@@ -7,8 +7,9 @@ import matplotlib.pyplot as plt
 
 
 #reading data
-data = pd.read_csv("C:/Users/Shruti SB/PycharmProjects/ML_BI_papers/AA_PF/alphaproteins.csv")
-#print(data.head())
+url = "https://raw.githubusercontent.com/ShrutiBaikerikar/machine-learning-bioinformatics-paper-implementations/main/1.Linear_Regression/Datasets/alphaproteins.csv"
+data = pd.read_csv(url)
+print(data.head())
 
 #Splitting the data into test and train groups as per the author's choice of proteins and features
 X_train = data['aC'][0:6]
@@ -28,7 +29,7 @@ y_test = y_test.values.reshape(-1,1)
 #selecting features that were used by the author
 cols = ['aC']
 
-#performing linear regression on all features
+#performing linear regression on features selected by the author
 model = LinearRegression(fit_intercept=True)
 model.fit(X_train,y_train)
 print("Linear Regression Results" )
