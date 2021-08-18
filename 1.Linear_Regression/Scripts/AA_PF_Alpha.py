@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 
 #reading data
-url = "https://github.com/ShrutiBaikerikar/machine-learning-bioinformatics-paper-implementations/blob/main/1.Linear Regression/Datasets/alphaproteins.csv"
+url = "https://raw.githubusercontent.com/ShrutiBaikerikar/machine-learning-bioinformatics-paper-implementations/main/1.Linear_Regression/Datasets/alphaproteins.csv"
 data = pd.read_csv(url)
 #print(data.head())
 
