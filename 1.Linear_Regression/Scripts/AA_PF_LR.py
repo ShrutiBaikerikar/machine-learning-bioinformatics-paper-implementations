@@ -1,3 +1,5 @@
+#Performing Feature Selection and applying Linear Regression on entire dataset
+
 import numpy as np
 import pandas as pd
 import operator
@@ -10,7 +12,8 @@ from sklearn.feature_selection import f_regression
 import matplotlib.pyplot as plt
 
 #reading the data
-data = pd.read_csv("C:/Users/Shruti SB/PycharmProjects/ML_BI_papers/AA_PF/AA_train.csv")
+url = "https://raw.githubusercontent.com/ShrutiBaikerikar/machine-learning-bioinformatics-paper-implementations/main/1.Linear_Regression/Datasets/AA_train.csv"
+data = pd.read_csv(url)
 #print(data.head())
 
 #Converting feature 'structure' to numeric labels
