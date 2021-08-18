@@ -7,7 +7,8 @@ import matplotlib.pyplot as plt
 
 
 #reading data
-data = pd.read_csv("C:/Users/Shruti SB/PycharmProjects/ML_BI_papers/AA_PF/alphaproteins.csv")
+url = "https://github.com/ShrutiBaikerikar/machine-learning-bioinformatics-paper-implementations/blob/main/1.Linear%20Regression/Datasets/alphaproteins.csv"
+data = pd.read_csv(url)
 #print(data.head())
 
 #Splitting the data into test and train groups as per the author's choice of proteins and features
