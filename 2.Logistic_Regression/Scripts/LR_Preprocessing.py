@@ -11,7 +11,8 @@ from sklearn.model_selection import RepeatedStratifiedKFold
 import matplotlib.pyplot as plt
 
 #Reading scaled/preprocessed data with all features
-rv_data_scaled = pd.read_csv("C:/Users/Shruti SB/PycharmProjects/ML_BI_papers/Reverse_vaccine/BPAD200.csv")
+url_1 = "https://raw.githubusercontent.com/ShrutiBaikerikar/machine-learning-bioinformatics-paper-implementations/main/2.Logistic_Regression/Datasets/BPAD200.csv"
+rv_data_scaled = pd.read_csv(url_1)
 rv_data_scaled.rename(columns=lambda x:x.replace(" ","_"),inplace=True)
 print(rv_data_scaled.head(3))
 
@@ -28,7 +29,8 @@ y = np.ravel(rv_data_scaled['Label']) #Flatten to 1D array
 #######################################################################################################
 #######################################################################################################
 #Reading scaled data with top10 features from BPAD200 dataset
-rv_data_top10 = pd.read_csv("C:/Users/Shruti SB/PycharmProjects/ML_BI_papers/Reverse_vaccine/BPAD200_Top10.csv")
+url_2 = "https://raw.githubusercontent.com/ShrutiBaikerikar/machine-learning-bioinformatics-paper-implementations/main/2.Logistic_Regression/Datasets/BPAD200_Top10.csv"
+rv_data_top10 = pd.read_csv(url_2)
 rv_data_top10.rename(columns=lambda x:x.replace(" ","_"),inplace=True)
 print(rv_data_top10.head(3))
 
