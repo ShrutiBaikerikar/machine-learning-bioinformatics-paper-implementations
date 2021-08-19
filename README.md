@@ -80,5 +80,5 @@ Here is a list of languages that were utilised to prepare these implementations:
 
 ## License <a name="license"></a>
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ShrutiBaikerikar/machine-learning-bioinformatics-paper-implementations/blob/main/LICENSE) file for details
 
