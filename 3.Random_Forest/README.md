@@ -50,9 +50,9 @@ Variable importance was not recalculated at each step to avoid overfitting. The 
 ## Results <a name="results"></a>
 
 The scripts on Random Forest applications for each of the dataset are as follows:
-Leukemia(GSE9476) : Leukemia_RF.R
-Prostate Cancer(GSE71783): ProstateCancer_RF.R
-Colon Cancer(GSE44861): ColonCancer_RF.R
+- Leukemia(GSE9476) : Leukemia_RF.R
+- Prostate Cancer(GSE71783): ProstateCancer_RF.R
+- Colon Cancer(GSE44861): ColonCancer_RF.R
 
 Random Forest method extracted small set of genes for every dataset that could predict whether a sample was ' Normal' or 'Cancer/Tumor'. The findings were as follows:
 -Leukemia        : ALDH1A1, BAG4, GPX1, JAG1, PLXNC1      Accuracy:95.31  Precision:96.00
@@ -61,7 +61,7 @@ Random Forest method extracted small set of genes for every dataset that could p
 
 Most of the genes identified by Random Forest method have biological relevance in the respsective cancer pathology and diagnosis and some have also been identified as clinical biomarkers via wet-lab and other experimental techniques. The detailed results along with their inferences can be found in the file Results.pdf in the Results Folder. 
 
-Note: Differences in Results obtained by scripts in this repository versus those obtained by authors of the research papers could be attributed to revisions in genome annotation, differences in preprocessing of genomic data and the heuristic nature of algorithms implemented.
+##### Note: Differences in Results obtained by scripts in this repository versus those obtained by authors of the research papers could be attributed to revisions in genome annotation, differences in preprocessing of genomic data and the heuristic nature of algorithms implemented.
 
 
 ## Citation <a name="citation"></a>
