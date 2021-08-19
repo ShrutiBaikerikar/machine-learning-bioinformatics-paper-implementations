@@ -1,12 +1,13 @@
 #Random Forest on Colon Cancer Dataset (GSE44861)
-library(RCurl)
+library(curl)
 library(randomForest)
 library(varSelRF)
 library(caret)
 
 #reading data
-download_file = getURL("https://raw.githubusercontent.com/ShrutiBaikerikar/machine-learning-bioinformatics-paper-implementations/main/3.Random_Forest/Datasets/ColonCancer_RFData.csv")
-data = read.csv(file=download_file,header=TRUE)
+url = "https://raw.githubusercontent.com/ShrutiBaikerikar/machine-learning-bioinformatics-paper-implementations/main/3.Random_Forest/Datasets/ColonCancer_RFData.csv"
+curl_download(url,'data.csv')
+data = read.csv('data.csv')
 head(data)[1:5]
 rownames(data)[1:5]
 colnames(data)[1:5]
