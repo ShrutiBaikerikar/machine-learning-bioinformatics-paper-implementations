@@ -1,9 +1,13 @@
+#Random Forest on Prostate Cancer Dataset (GSE71783)
+library(curl)
 library(randomForest)
 library(varSelRF)
 library(caret)
 
 #reading data
-data = read.csv(file="C:/Users/Shruti/Documents/RF_CancerBiomarkers/for github/GSE71783/GSE71783_RFData.csv",header=TRUE)
+url = "https://raw.githubusercontent.com/ShrutiBaikerikar/machine-learning-bioinformatics-paper-implementations/main/3.Random_Forest/Datasets/ProstateCancer_RFData.csv"
+curl_download(url,'data.csv')
+data = read.csv('data.csv')
 head(data)[1:5]
 rownames(data)[1:5]
 colnames(data)[1:5]
