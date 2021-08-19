@@ -39,7 +39,7 @@ Data obtained after meta-analysis and preprocessing is made available as 'Metaan
 
 ## Implementation details <a name="implementation-details"></a>
 
-Note: This implementation is slightly different from what has been followed in the original manuscript but the end goal is the same i.e. 'developing an SVM classifier that predicts Osteosarcoma Metastasis'.
+#### Note: This implementation is slightly different from what has been followed in the original manuscript but the end goal is the same i.e. 'developing an SVM classifier that predicts Osteosarcoma Metastasis'.
 
 R software 4.0.3 was used from pre-processing of the data, statiscal analysis and machine learning implementation.
 
