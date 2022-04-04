@@ -35,7 +35,7 @@ Preprocessed data, which can be directly utilised for ML, has been provided in t
 
 ## Implementation details <a name="implementation-details"></a>
 
-R software 4.0.3 was used from pre-processing of the data, statiscal analysis and machine learning implementation.
+R software 4.0.3 was used for pre-processing of the data, statiscal analysis and machine learning implementation.
 
 Limma package was used to analyze and preprocess the microarray gene expression datasets. Differentially expressed genes were identified and top 2000 genes with a p-value < 0.05 were retained for further study.
 
