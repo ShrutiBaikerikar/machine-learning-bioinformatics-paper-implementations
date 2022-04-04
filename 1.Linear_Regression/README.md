@@ -12,8 +12,8 @@
 
 The research paper focusses on the use of amino acid sequence of protein to predict protein-folding rate using linear regression.
 
-The amino acid sequence of proteins has been used to predict three dimensional structure of the protein. Similarly, the author has made used of protein sequence in combination with physical-chemical, energetic
-and conformational properties of amino acid residues to predict protein-folding rate. Protein-folding is the process by which protein chains fold to attain its 3D structure that makes it biologically functional.
+The amino acid sequence of proteins has been used to predict three dimensional structure of the protein. Similarly, the author has made use of protein sequence in combination with physical-chemical, energetic
+and conformational properties of amino acid residues to predict protein-folding rate. Protein-folding is the process by which protein chains fold to attain its 3D structure that makes the protein biologically functional.
 
 Multiple Linear regression is a model that assumes a linear relationship between multiple input variables and single output variable. The author developed linear regression models that predicted protein folding rates from properties based on amino acid sequences of the protein.
 It was also noted that classifying the proteins based on their structure (alpha, beta or mixed) helps improve the correlation between amino acid properties and protein folding rates.
@@ -21,7 +21,7 @@ It was also noted that classifying the proteins based on their structure (alpha,
 ## Dataset <a name="dataset"></a>
 
 The original dataset provided by the author comprised of normalized and raw values of generic properties of amino acids. The normalized values of amino acid properties were further used to prepare the final dataset for machine learning based on the amino acid sequence of each protein.
-The final dataset (AA_train.csv) comprised of 40 proteins and 51 features.
+The final dataset (AA_train.csv) comprises of 40 proteins and 51 features.
 
 The dataset was further split into mini-datasets for further analysis. These datasets have been provided in Datasets folder.
 
