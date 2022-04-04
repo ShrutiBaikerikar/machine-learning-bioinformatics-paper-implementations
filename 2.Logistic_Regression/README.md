@@ -20,7 +20,7 @@ Multiple machine learning classifiers have been applied to the data to classify 
 
 ## Dataset <a name="dataset"></a>
 
-This study utilised a previously assembled dataset BPAD200 developed by Heinson et al. [Heinson AI, Gunawardana Y, Moesker B, et al. Enhancing the Biological Relevance of Machine Learning Classifiers for Reverse Vaccinology. Int J Mol Sci. 2017;18(2):312. Published 2017 Feb 1. doi:10.3390/ijms18020312]
+This study utilised a previously assembled dataset BPAD200 developed by Heinson et al. (*Heinson AI, Gunawardana Y, Moesker B, et al. Enhancing the Biological Relevance of Machine Learning Classifiers for Reverse Vaccinology. Int J Mol Sci. 2017;18(2):312. Published 2017 Feb 1. doi:10.3390/ijms18020312*)
 
 The dataset contained 200 Bacterial Protective Antigens (BPAs) and 200 non-BPAs. a BPA was defined as a bacterial protein that has led to significant protection (p <0.05) in an animal model following immunization and subsequent challenge with the bacterial pathogen.
 
@@ -44,11 +44,12 @@ Python 3.8 was used for machine learning implementation.
 
 Scikit-Learn package was used to implement the following machine learning algorithms: Support Vector Machines, Logistic Regression and Random Forest. Results were evaluated as Area Under the Curve generated using a leave tenth out cross validation (LTOCV) on the entire dataset.
 
-Greedy backward feature elimination (GBFE) was implemented to obtain an optimum top ten features for logistic regression from the entire dataset of 525 features. These top 10 features were already highlighted by the author in his previous publication. [Heinson AI, Gunawardana Y, Moesker B, et al. Enhancing the Biological Relevance of Machine Learning Classifiers for Reverse Vaccinology. Int J Mol Sci. 2017;18(2):312. Published 2017 Feb 1. doi:10.3390/ijms18020312]
+Greedy backward feature elimination (GBFE) was implemented to obtain an optimum top ten features for logistic regression from the entire dataset of 525 features. These top 10 features were already highlighted by the author in his previous publication. 
+(*Heinson AI, Gunawardana Y, Moesker B, et al. Enhancing the Biological Relevance of Machine Learning Classifiers for Reverse Vaccinology. Int J Mol Sci. 2017;18(2):312. Published 2017 Feb 1. doi:10.3390/ijms18020312*)
 
 To examine how efficient GBFE technique was in selecting informative features, permutation testing was conducted. 10 features were selected at random from the 525 features and used to classify BPAs and Non-BPAs. Classifier performances were evaluated using leave tenth out cross validation to generate an average AUC. This process was repeated 10,000 times to generate a frequency plot.
 
-The authors also proposed a novel validation technique: Leave One Bacteria Out Validation (LOBOV). The dataset contains proteins from 40 different bacterial species. In LOBOV, every bacterial species in the dataset that had more than 4 examples of BPAs and non-BPAs combined were removed sequenctially from the training dataset and used as a testing dataset. 
+The authors also proposed a novel validation technique: Leave One Bacteria Out Validation (LOBOV). The dataset contains proteins from 40 different bacterial species. In LOBOV, every bacterial species in the dataset that had more than 4 examples of BPAs and non-BPAs combined were removed sequentially from the training dataset and used as a testing dataset. 
 This process helped the researchers understand whether ML techniques were capable of predicting BPAs from unknown or bacterial pathogens that were not included in the training dataset.
 
 
@@ -91,6 +92,7 @@ The scripts for this procedure is GBFE_LR.py
 
 Analysis of Greedy Backward Feature Elimination technique showed that increase in features to predict BPAs from non-BPAs led to decrease in accuracy. Repeated iterations suggested that 'MBAAgl7_CorCount' was the most informative feature.
 Similar results were obtained by the authors as well.  
+
 The authors highlighted that 'MBAAgl7_CorCount' is a parameter that describes MHC class II epitope binding and is derived from protein annotation tool “GPS-MBA". The main function of major histocompatibility complex (MHC) class II molecules is to present processed antigens and are vital for for the initiation of the antigen-specific immune response.
 The presence of this feature during prediction adds biological significance to the results.
 
