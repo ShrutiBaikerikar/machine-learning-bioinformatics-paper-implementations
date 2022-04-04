@@ -46,16 +46,15 @@ This repository is designed with the following puproses in mind:
 Here is a list of languages that were utilised to prepare these implementations:
 - Python 3
 - R 4.0.0
-- Bash
 
 
 ## Libraries, Packages and Binaries Used <a name="tools"></a>
 
 - Python Libraries: Numpy, Pandas, Scikit-Learn, Matplotlib, Seaborn
 
-- R packages: ballgown, genefilter, varselRF, randomForest, limma, oligo, MetaDE, e1071, caret, topGO, KEGGREST, GSEABase
+- R packages: affy, genefilter, varselRF, randomForest, limma, oligo, MetaDE, MetaQC e1071, caret, topGO, KEGGREST, GSEABase
 
-- Binaries: FastQC, Bowtie, SAMtools, BCFTools, VCFTools, Bedtools, BWA, HISAT2, StringTie, Ballgown, MACS3, IDR, DeepTools, Analysis Power Tools (APT), Cytoscape
+- Binaries: Analysis Power Tools (APT), Cytoscape
 
 - Web Resources: WebGestalt, ToppGene
 
