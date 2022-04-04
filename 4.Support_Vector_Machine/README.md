@@ -11,7 +11,7 @@
 ## Abstract <a name="abstract"></a>
 
 Osteosarcoma is a very common type of bone cancer; it is the 8th most common type of cancer in children. Despite the success with chemotherapy, metastasis in osteosarcoma leads to poor prognosis and survival rates.
-This research paper explores the gene expression profile of osteosarcoma patients via meta-analysis of microarrays to identify to key genes associated with metastasis.
+This research paper explores the gene expression profile of osteosarcoma patients via meta-analysis of microarrays to identify key genes associated with metastasis.
 
 These differentially expressed genes are further utilised to construct a protein-protein interaction network and top featured genes from this network are used to train a Support Vector Machine Classifier.
 
