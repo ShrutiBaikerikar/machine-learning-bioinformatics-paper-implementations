@@ -21,7 +21,7 @@ It was also noted that classifying the proteins based on their structure (alpha,
 ## Dataset <a name="dataset"></a>
 
 The original dataset provided by the author comprised of normalized and raw values of generic properties of amino acids. The normalized values of amino acid properties were further used to prepare the final dataset for machine learning based on the amino acid sequence of each protein.
-The final dataset (AA_train.csv) comprises of 40 proteins and 51 features.
+The final dataset (AA_train.csv) comprises of 50 proteins and 51 features.
 
 The dataset was further split into mini-datasets for further analysis. These datasets have been provided in Datasets folder.
 
