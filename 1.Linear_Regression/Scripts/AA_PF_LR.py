@@ -22,7 +22,7 @@ labelEncoder.fit(data['Structure'])
 data['Structure'] = labelEncoder.transform(data['Structure'])
 #print(data.head(20))
 
-#Creating X and y variables
+#Creating set of explanatory and target variables i.e. X and y variables
 y = data['lnKf']
 X = data.drop(['PDB_Code','lnKf'],axis=1)
 cols = list(X.columns)
@@ -114,31 +114,23 @@ print('Coefficient of determination:',metrics.r2_score(y_sel_test, y_pred))
 #Linear Regression with Feature Importance based on Correlation
 
 # Top 10 Feature selection based on correlation
-feat_sel = SelectKBest(score_func=f_regression, k="all")
+feat_sel = SelectKBest(score_func=f_regression, k=10)
 feat_sel.fit(X_train,y_train)
+# transform train input data
+X_train_fs = feat_sel.transform(X_train)
+# transform test input data
+X_test_fs = feat_sel.transform(X_test)
 
-#creating a dictionary of features with their scores
-sel_feat_all ={}
-for i in range(0,len(cols)):
-    sel_feat_all[cols[i]] = feat_sel.scores_[i]
-print()
-print("Feature Scoring according to Correlation")
-print(sel_feat_all)
+#print(feat_sel.scores_)
+#print(feat_sel.get_feature_names_out())
+#print(X_train.shape)
+#print(X_train_fs.shape)
 
-#sorting the dictionary in descending order to get highest scored features
-sorted_features = dict( sorted(sel_feat_all.items(), key=operator.itemgetter(1),reverse=True))
-print(sorted_features)
-
-#Extracting top 10 features
-top10_feats = list(sorted_features.keys())[0:10]
-print(top10_feats)
-
-#Applying Linear Regression on Top 10 features
-X_train_top10 = X_train[top10_feats]
-X_test_top10 = X_test[top10_feats]
+#Getting the list of the top10 selected features
+top10_feats = feat_sel.get_feature_names_out()
 
 model3 = SGDRegressor(fit_intercept=True,random_state=1)
-model3.fit(X_train_top10,y_train)
+model3.fit(X_train_fs,y_train)
 print()
 print("Linear Regression Results for Top 10 Features" )
 print ("Intercept",model3.intercept_)
@@ -149,7 +141,7 @@ print("Values of Coefficients In Linear Model")
 print(coeff_df)
 
 #predicting on test data
-y_pred = model3.predict(X_test_top10)
+y_pred = model3.predict(X_test_fs)
 
 #compare the actual output values for X_test with the predicted values
 df3 = pd.DataFrame({'Actual': y_test, 'Predicted': y_pred})
