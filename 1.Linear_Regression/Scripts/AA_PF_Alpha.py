@@ -12,6 +12,7 @@ data = pd.read_csv(url)
 #print(data.head())
 
 #Splitting the data into test and train groups as per the author's choice of proteins and features
+# Author's choice of feature: aC - alphaC is the power to be at the C-terminal of alpha helix
 X_train = data['aC'][0:6]
 #print(X_train)
 X_train = X_train.values.reshape(-1,1)
@@ -19,6 +20,7 @@ X_test = data['aC'][6:9]
 X_test = X_test.values.reshape(-1,1)
 #print(X_test)
 
+#Target variable: lnKf - log of protein-folding rate
 y_train = data['lnKf'][0:6]
 y_train = y_train.values.reshape(-1,1)
 #print(y_train)
@@ -29,7 +31,7 @@ y_test = y_test.values.reshape(-1,1)
 #selecting features that were used by the author
 cols = ['aC']
 
-#performing linear regression on all features
+#performing linear regression on selected features
 model = LinearRegression(fit_intercept=True)
 model.fit(X_train,y_train)
 print("Linear Regression Results" )
