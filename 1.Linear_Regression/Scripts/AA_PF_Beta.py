@@ -12,6 +12,10 @@ data = pd.read_csv(url)
 #print(data.head())
 
 #selecting features selected by the author for beta proteins
+#K0 - compressibility
+#Pb - beta strand tendency
+#Ra - reduction in solvent accessibility
+#dASA - solvent accessible surface area for protein unfolding
 cols = ['K0','Pb','Ra','dASA']
 
 #splitting data into train and test datasets based on the author's choice of proteins
@@ -25,6 +29,7 @@ X_test = data.loc[13:18]
 X_test = X_test[['K0','Pb','Ra','dASA']]
 #print(X_test)
 
+#Target variable: lnKf - logarithm of protein folding rate
 y_train = data['lnKf'][0:13]
 #print(y_train)
 y_test = data['lnKf'][13:20]
