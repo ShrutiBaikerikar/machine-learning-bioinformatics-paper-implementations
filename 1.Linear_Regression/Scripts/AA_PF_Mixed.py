@@ -12,6 +12,10 @@ data = pd.read_csv(url)
 #print(data.head())
 
 #selecting features as specified by the author
+#K0 - compressibility
+#Ra - reduction in solvent accessibility
+#dASA - solvent accessible surface area for protein unfolding
+#GhD - Gibbs free energy change of hydration for denatured protein
 cols = ['K0','Ra','dASA','GhD']
 
 #Splitting data into train and test sets based on author's choice of proteins
@@ -25,6 +29,7 @@ X_test = data.loc[13:22]
 X_test = X_test[cols]
 #print(X_test)
 
+#Target variable: lnKf - logarithm of protein folding rate
 y_train = data['lnKf'][0:13]
 #print(y_train)
 y_test = data['lnKf'][13:25]
@@ -70,4 +75,3 @@ print("Evaluation on Test data")
 print('Mean Absolute Error:', metrics.mean_absolute_error(y_test, y_test_pred))
 print('Mean Squared Error:', metrics.mean_squared_error(y_test, y_test_pred))
 print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(y_test, y_test_pred)))
-print('Coefficient of determination:',metrics.r2_score(y_test, y_test_pred))
