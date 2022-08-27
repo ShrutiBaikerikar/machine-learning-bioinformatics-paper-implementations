@@ -80,8 +80,8 @@ The script for this procedure is AA_PF_LR.py .
   Intercept: 0.51474962
        RMSE: 2.841733087647818
   
-  Coefficient with highest value: GhN (Gibbs free energy change of hydration for native protein) : 0.383378
-  Coefficient with lowest value : Structure : -1.738907
+ <p>Coefficient with highest value: GhN (Gibbs free energy change of hydration for native protein) : 0.383378 </p>
+ <p>Coefficient with lowest value : Structure : -1.738907 </p>
 
 
 #### - Applying Linear Regression on Informative Features Identified by the Author
