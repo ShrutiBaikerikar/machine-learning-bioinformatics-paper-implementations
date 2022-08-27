@@ -109,17 +109,17 @@ The script for this procedure is AA_PF_LR.py .
 
   Linear Regression with Stochastic Gradient Descent was applied to the entire dataset to identify the top 10 informative features based on correlation. These features were:
   - Structure: Structure class of the protein (Alpha, Beta, Mixed)
-  - aM : Power to be at the middle of alpha helix
-  - Nm : Average medium-range contacts
   - pHi : Isoelectric point
+  - pK : Equilibrium constant with reference to the ionization property of COOH group
   - Mu : Refractive index
+  - Pa : Alpha-helical tendency
   - Pt : Turn tendency
   - Pc : Coil tendency
-  - Pa : Alpha-helical tendency
   - F : Mean rms fluctuational displacement
-  - pK : Equilibrium constant with reference to the ionization property of COOH group
-
-   The Root Mean Squared Error obtained was 2.7891654237496137.   
+  - aM : Power to be at the middle of alpha helix
+  - Nm : Average medium-range contacts
+  
+  The Root Mean Squared Error obtained was 2.7891654237496137.   
 
 
 Note: The difference in results obtained from these scripts and those found by the author are due to differences in protein sequence (which is regularly updated) and implementation technique. The implementation technique used in the scripts focuses on the use of Machine Learning as opposed to the author's use of statistical techniques.
