@@ -40,7 +40,7 @@ cv = RepeatedStratifiedKFold(n_splits=10, n_repeats=3, random_state=1)
 # evaluate model
 lr_scores = cross_val_score(lr_model, X, y, scoring='roc_auc', cv=cv, n_jobs=-1)
 # calculate mean ROC AUC
-print('Mean ROC AUC:' ,np.mean(lr_scores))
+print('Mean ROC AUC for Logistic Regression:' ,np.mean(lr_scores))
 
 #####################################################################################################################
 #####################################################################################################################
@@ -50,7 +50,7 @@ dt_model = DecisionTreeClassifier(criterion="gini",max_depth=5,min_samples_split
 # evaluate model
 dt_scores = cross_val_score(dt_model, X, y, scoring='roc_auc', cv=cv, n_jobs=-1)
 # calculate mean ROC AUC
-print('Mean ROC AUC:' ,np.mean(dt_scores))
+print('Mean ROC AUC for Decision Tree Classifier:' ,np.mean(dt_scores))
 
 #####################################################################################################################
 #####################################################################################################################
@@ -63,7 +63,7 @@ rf_10_model = RandomForestClassifier(n_estimators=10,criterion="gini",max_depth=
 # evaluate model
 rf_10_scores = cross_val_score(rf_10_model, X, y, scoring='roc_auc', cv=cv, n_jobs=-1)
 # calculate mean ROC AUC
-print('Mean ROC AUC:' ,np.mean(rf_10_scores))
+print('Mean ROC AUC for RF-10 TREES:' ,np.mean(rf_10_scores))
 
 # RF-100 trees
 rf_100_model = RandomForestClassifier(n_estimators=100,criterion="gini",max_depth=5,min_samples_split=2,
@@ -71,7 +71,7 @@ rf_100_model = RandomForestClassifier(n_estimators=100,criterion="gini",max_dept
 # evaluate model
 rf_100_scores = cross_val_score(rf_100_model, X, y, scoring='roc_auc', cv=cv, n_jobs=-1)
 # calculate mean ROC AUC
-print('Mean ROC AUC:' ,np.mean(rf_100_scores))
+print('Mean ROC AUC for RF-100 TREES:' ,np.mean(rf_100_scores))
 
 # RF-1000 trees
 rf_1000_model = RandomForestClassifier(n_estimators=1000,criterion="gini",max_depth=5,min_samples_split=3,
@@ -79,7 +79,7 @@ rf_1000_model = RandomForestClassifier(n_estimators=1000,criterion="gini",max_de
 # evaluate model
 rf_1000_scores = cross_val_score(rf_1000_model, X, y, scoring='roc_auc', cv=cv, n_jobs=-1)
 # calculate mean ROC AUC
-print('Mean ROC AUC:' ,np.mean(rf_1000_scores))
+print('Mean ROC AUC for RF-1000 TREES:' ,np.mean(rf_1000_scores))
 
 ###################################################################################################################
 ##################################################################################################################
@@ -91,21 +91,21 @@ svm_linear_model = SVC(kernel='linear',C=3.0,random_state=1)
 # evaluate model
 svm_linear_scores = cross_val_score(svm_linear_model, X, y, scoring='roc_auc', cv=cv, n_jobs=-1)
 # calculate mean ROC AUC
-print('Mean ROC AUC:',np.mean(svm_linear_scores))
+print('Mean ROC AUC for SVM_Linear:',np.mean(svm_linear_scores))
 
 # SVM_Polynomial
 svm_poly_model = SVC(kernel='poly',C=1.0,degree=2,random_state=1)
 # evaluate model
 svm_poly_scores = cross_val_score(svm_poly_model, X, y, scoring='roc_auc', cv=cv, n_jobs=-1)
 # calculate mean ROC AUC
-print('Mean ROC AUC:',np.mean(svm_poly_scores))
+print('Mean ROC AUC for SVM_Polynomial:',np.mean(svm_poly_scores))
 
 # SVM_RBF
 svm_rbf_model = SVC(kernel='rbf',C=10,gamma=0.1,random_state=1)
 # evaluate model
 svm_rbf_scores = cross_val_score(svm_rbf_model, X, y, scoring='roc_auc', cv=cv, n_jobs=-1)
 # calculate mean ROC AUC
-print('Mean ROC AUC:',np.mean(svm_rbf_scores))
+print('Mean ROC AUC for SVM_RBF:',np.mean(svm_rbf_scores))
 
 #######################################################################################################
 #######################################################################################################
