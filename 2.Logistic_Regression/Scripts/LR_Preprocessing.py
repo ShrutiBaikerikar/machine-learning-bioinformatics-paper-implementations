@@ -66,6 +66,7 @@ print('Mean ROC AUC:' ,np.mean(scores_SVMtop10))
 ##############################################################################################################
 # Logistic Regression on Preprocessed data including only Top 10 features identified by GBFE using LR (LRTop10)
 # These features were obtained by performing Greedy Backward Feature Elimination using Logistic Regression
+# Details for obtaining these features is included in script GBFE_LR.py
 
 X_LR_top10 = X[['DictOGlyc_Average_Threshold_Length', 'YinOYang-AvgDiff1', 'LipoP_CleavII_Avg_Length',
                 'NetOGlyc_Count_Length', 'NetOGlyc-T_Count_Score_Length', 'GPS-ARM_Dbox_AverageDiff',
