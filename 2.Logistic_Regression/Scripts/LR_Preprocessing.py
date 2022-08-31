@@ -1,4 +1,4 @@
-# Logistic Regression comparison on preprocessed/scaled data
+# Logistic Regression comparison on preprocessed/scaled data including all features
 # The original research paper also compared the effect of Logistic Regression
 # on the raw data vs preprocessed data.
 # Since we do not have the raw data, we are excluding that from the analysis.
