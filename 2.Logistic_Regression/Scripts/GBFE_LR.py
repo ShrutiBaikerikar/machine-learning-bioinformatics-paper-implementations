@@ -30,13 +30,13 @@ col_names = list(X.columns.values)
 model = LogisticRegression(solver='lbfgs',max_iter=1000)
 min_features_to_select=1
 cv = RepeatedStratifiedKFold(n_splits=10, n_repeats=3, random_state=1)
-rfecv = RFECV(model,min_features_to_select=1,cv= cv,step=1,scoring='accuracy')
+rfecv = RFECV(model,min_features_to_select=10,cv= cv,step=1,scoring='accuracy')
 rfecv.fit(X, y)
 
 # Plot number of features VS. cross-validation scores
 plt.figure()
 plt.xlabel("Number of features selected")
 plt.ylabel("Classification accuracy(%)")
-plt.plot(range(min_features_to_select,len(rfecv.grid_scores_) + min_features_to_select),
-         (rfecv.grid_scores_*100))
+plt.plot(range(min_features_to_select,len(list(rfecv.cv_results_["mean_test_score"])) + min_features_to_select),
+         (rfecv.cv_results_["mean_test_score"]*100))
 plt.show()
